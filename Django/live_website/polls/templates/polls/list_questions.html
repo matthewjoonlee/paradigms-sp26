@@ -3,18 +3,14 @@
     <title>Latest 5 questions posted</title>
 </head>
 <body>
-{% if latest_questions %}
+{%  if questions %}
     <ul>
-    {% for question in latest_questions %}
-        <li>
-            <a href="/polls/{{ question.id }}">
-                {{ question.question_text }}
-            </a>
-        </li>
-    {% endfor %}
+    {% for question in questions %}
+        <li>Q{{ question.id }} -- {{ question.question_text }}</li>
+    {%  endfor %}
     </ul>
 {% else %}
-    <p>No questions posted</p>
+    <p>No questions available</p>
 {% endif %}
 </body>
 </html>
