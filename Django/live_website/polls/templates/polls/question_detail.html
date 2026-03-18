@@ -4,7 +4,7 @@
 </head>
 <body>
 
-<form action="{% url 'polls:vote' question.id %}" method="post">
+    <form action="{% url 'polls:vote' question.id %}" method="post">
     {% csrf_token %}
     <fieldset>
         <legend>

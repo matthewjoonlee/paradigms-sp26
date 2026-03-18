@@ -1,9 +1,12 @@
-<html>
-<head>
-    <title>Latest 5 questions posted</title>
-</head>
-<body>
-{% if questions %}
+{% extends "polls/base.html" %}
+
+{% block title %}
+Latest 5 questions posted
+{% endblock %}
+
+
+{% block content %}
+    {% if questions %}
     <ul>
         {% for question in questions %}
             <li>
@@ -33,5 +36,5 @@
         {% endif %}
     </span>
 </div>
-</body>
-</html>
+
+{% endblock %}
