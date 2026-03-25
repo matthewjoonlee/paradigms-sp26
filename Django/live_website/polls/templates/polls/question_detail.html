@@ -1,8 +1,6 @@
-<html>
-<head>
-    <title>{{ question.question_text }} </title>
-</head>
-<body>
+{% extends "polls/base.html" %}
+{%  block title %}{{ question.question_text }}{%  endblock %}
+{%  block content %}
 
     <form action="{% url 'polls:vote' question.id %}" method="post">
     {% csrf_token %}
@@ -20,6 +18,4 @@
     </fieldset>
     <input type="submit" value="Vote">
 </form>
-
-</body>
-</html>
+{%  endblock %}

@@ -1,0 +1,61 @@
+id,package,summary,status
+43814,Website problem,[GCOV] Compile result links for PECL exts,Open
+44278,ODBC related,ODBC: nvarchar(max) mangled,Re-Opened
+47624,SOAP related,SOAP response has int type for a key value that is out of range,Verified
+47982,PDO MySQL,PDO_mysql: Storing image binary data,Verified
+49106,Apache2 related,PHP incorrectly sets no_local_copy=1 on response as Apache 2 module,Analyzed
+49169,SOAP related,"SoapServer calls wrong function, although ""SOAP action"" header is correct",Verified
+49270,Compile Failure,configure fails if PHP source folder path contains spaces,Assigned
+49874,Filesystem function related,ftell() and fseek() inconsistency when using stream filters,Open
+50293,OpenSSL related,Several openssl functions ignore the VCWD,Verified
+50892,Class/Object related,Protected members of non-congruent children classes are visible,Open
+51056,Streams related,fread() on blocking stream will block even if data is available,Assigned
+51983,FPM related,[fpm sapi] pm.status_path not working when cgi.fix_pathinfo=1,Open
+52065,Safe Mode/open_basedir,Warning about open_basedir restriction while accessing a file as directory,Verified
+52376,*Directory/Filesystem functions,opendir() cannot open UNC paths in IIS7 using passthrough auth.,Open
+53518,Program Execution,pclose and proc_close do not return values for use with pcntl_wifexited,Open
+53776,SOAP related,soap module does not allow to use underlying persistent connections,Open
+55138,PDO OCI,PDO_OCI cannot insert more than 1332 one byte chars in al32utf8 varchar2 field,Open
+55639,SOAP related,Digest autentication dont work,Open
+55677,SOAP related,Digest autentication dont work,Open
+55831,*General Issues,double check for host_alias in acinclude.m4,Open
+60707,Variables related,max_input_vars allows one extra var,Open
+60961,FPM related,Graceful Restart (USR2) isn't very graceful,Open
+60981,Testing related,Shell environment inaccessible in tests,Open
+60994,PDO OCI,PDO_OCI: Reading a multibyte CLOB caps at 8192 characters,Open
+61525,SOAP related,SOAP functions require at least one space after HTTP header colon,Open
+61584,Readline related,"when using readline_info to set line_buffer, it causes memory corruption",Open
+61597,SimpleXML related,SimpleXMLElement doesn't include both @attributes and textContent in properties,Re-Opened
+62032,Filter related,"filter_var incorrectly strips characters from strings after ""<""",Verified
+62106,Zip Related,"zip can (and will, in real-life cases) leak huge tempfiles",Assigned
+63343,PDO related,Commit failure for repeated persistent connection,Analyzed
+63380,*XML functions,Allocation via libxml does not use PHP's per-request allocator,Open
+63767,FTP related,Follow up for Bug #36103,Assigned
+63941,Performance problem,Date timezone code-cleanup,Open
+64173,Filter related,filter_var filter_validate_url incorrect,Verified
+64196,Reproducible crash,Indirect/magic call recursion stack overflow,Open
+64280,Reproducible crash,__destruct loop segfaults,Open
+64291,Scripting Engine problem,Indeterminate GC of evaled lambda function resources,Open
+64346,*General Issues,Function name resolution and eval,Open
+64531,SQLite related,SQLite3Result::fetchArray runs the query again.,Verified
+65069,SPL related,GlobIterator fails to access files inside an open_basedir restricted dir,Analyzed
+65154,OpenSSL related,setup_verify implicitly adds default CA paths,Open
+65398,FPM related,Race condition between SIGCHLD and child stdout/stderr event leads to segfault,Open
+65600,SPL related,SplFileObject->next() not move next without current(),Verified
+66013,Compile Failure,Solaris build failure,Open
+66019,Date/time related,DateTime object does not support short ISO 8601 time format - YYYY-MM-DDTHH,Assigned
+66095,Unknown/Other Function,Bundled libmagic has public symbols and conflicts with system libmagic,Open
+66227,Scripting Engine problem,exec() returns early upon multiple signals,Open
+66389,XMLRPC-EPI related,XMLRPC decoding 64bit integers,Open
+66486,Date/time related,strtotime on string with whitespace gives current timestamp not false,Re-Opened
+66694,FPM related,php-fpm is crashing when using eventport,Open
+66710,Doc Build problem,using phd.config.php but not set all config will error,Assigned
+67292,SOAP related,SoapClient posts on connection closed by server,Open
+67351,Streams related,copy() should handle HTTP 304 response,Verified
+67383,*General Issues,exec() leaks file and socket descriptors to called program,Open
+67414,Scripting Engine problem,PhD build fails with exit code 255,Open
+67736,*General Issues,setcookie() not updating existing cookies,Verified
+68018,FPM related,"php_value directive modifies ""Changeable"" context",Open
+68230,Testing related,OpenSSL tests spawn PHP processes without preserving the test environment,Open
+68466,SPL related,Iterating SplFileObject shows empty line at end of file,Open
+68606,Reproducible crash,stack overflow/segfault in zend_objects_free_object_storage,Assigned

@@ -1,9 +1,6 @@
-<html>
-
-<head>
-    <title>{{ question.question_text }}</title>
-</head>
-<body>
+{% extends "polls/base.html" %}
+{%  block title %}{{ question.question_text }}{%  endblock %}
+{%  block content %}
     <h1>{{ question.question_text }}</h1>
     <ul>
 
@@ -12,5 +9,4 @@
         <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
     {% endfor %}
     </ul>
-</body>
-</html>
+{%  endblock %}
